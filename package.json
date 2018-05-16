@@ -1,0 +1,23 @@
+{
+  "name": "shim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "shim.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Schmavery/shim.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Schmavery/shim/issues"
+  },
+  "dependencies":[
+    "commander",
+    "yauzl"
+  ],
+  "homepage": "https://github.com/Schmavery/shim#readme"
+}
