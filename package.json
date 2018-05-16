@@ -1,11 +1,10 @@
 {
-  "name": "shim",
+  "name": "opal",
   "version": "1.0.0",
   "description": "",
-  "main": "shim.js",
-  "bin": "./shim.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "shim --url https://codeload.github.com/pyrocat101/opal/zip/v0.1.1 --unzip"
   },
   "repository": {
     "type": "git",
@@ -17,8 +16,7 @@
     "url": "https://github.com/Schmavery/shim/issues"
   },
   "dependencies":{
-    "commander": "*",
-    "yauzl": "*"
+    "shim": "Schmavery/shim",
   },
   "homepage": "https://github.com/Schmavery/shim#readme"
 }
