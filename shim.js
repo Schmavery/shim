@@ -1,4 +1,4 @@
-!/usr/bin/env node
+#!/usr/bin/env node
 
 var https = require('https');
 var fs = require('fs');
