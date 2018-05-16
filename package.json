@@ -17,7 +17,7 @@
     "url": "https://github.com/Schmavery/shim/issues"
   },
   "dependencies":{
-    "commander": "*"
+    "commander": "*",
     "yauzl": "*"
   },
   "homepage": "https://github.com/Schmavery/shim#readme"
