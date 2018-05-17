@@ -105,9 +105,10 @@ function unzip(filename, cb){
                 i++;
                 zipfile.readEntry();
               });
-              // Mode roughly translates to unix permissions.
+              // Mode roughly translates to unix permissions. Also add read perms
+              // cause otherwise what's the point...
               // See https://github.com/thejoshwolfe/yauzl/issues/57#issuecomment-301847099          
-              var mode = entry.externalFileAttributes >>> 16;
+              var mode = entry.externalFileAttributes >>> 16 | 0o444;
               var writeStream = fs.createWriteStream(entry.fileName, {mode, encoding: 'binary'})
               readStream.pipe(writeStream);
             });
