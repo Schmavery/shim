@@ -1,7 +1,7 @@
 {
   "name": "opal",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.1",
+  "description": "bsb-native shim for pyrocat101/opal",
   "main": "index.js",
   "scripts": {
     "postinstall": "shim --url https://codeload.github.com/pyrocat101/opal/zip/v0.1.1 --unzip"
@@ -17,6 +17,9 @@
   },
   "dependencies":{
     "shim": "Schmavery/shim"
+  },
+  "devDependencies":{
+    "bs-platform": "bsansouci/bsb-native#2.1.1"
   },
   "homepage": "https://github.com/Schmavery/shim#readme"
 }
