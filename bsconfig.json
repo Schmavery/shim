@@ -1,18 +1,29 @@
 {
-  "name": "opal",
-  "version": "0.1.1",
+  "name": "re",
+  "version": "1.9.0",
   "sources": [{
-    "dir": "opal-0.1.1",
-    "public": ["Opal"]
-  }],
-  "package-specs": {
-    "module": "commonjs",
-    "in-source": true
+    "dir": "ocaml-re-1.9.0",
+    "subdirs": ["lib"]
   },
-  "suffix": ".bs.js",
-  "bs-dependencies": [
+  {
+    "dir": "test",
+    "type": "dev"
+  }],
+  "refmt": 3,
+  "namespace": "Re",
+  "bs-dependencies": ["bsc-stdlib-polyfill"],
+  "bsc-flags": [
+    "-open BscStdlibPolyfill"
   ],
+  "ocaml-flags": [
+    "-open BscStdlibPolyfill"
+  ],
+
   "warnings": {
     "error" : "+101"
-  }
+  },
+  "entries": [{
+     "backend": "native",
+     "main-module": "Test"
+  }]
 }

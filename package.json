@@ -1,10 +1,11 @@
 {
-  "name": "opal",
+  "name": "ocaml-re",
   "version": "0.1.1",
-  "description": "bsb-native shim for pyrocat101/opal",
+  "description": "bsb-native shim for ocaml/ocaml-re",
   "main": "index.js",
   "scripts": {
-    "postinstall": "shim --url https://codeload.github.com/pyrocat101/opal/zip/v0.1.1 --unzip"
+    "postinstall": "shim --url https://codeload.github.com/ocaml/ocaml-re/zip/1.9.0 --unzip && ./postinstall.sh",
+    "build": "bsb -make-world -backend native"
   },
   "repository": {
     "type": "git",
@@ -15,11 +16,12 @@
   "bugs": {
     "url": "https://github.com/Schmavery/shim/issues"
   },
-  "dependencies":{
-    "shim": "Schmavery/shim"
+  "dependencies": {
+    "shim": "Schmavery/shim",
+    "bsc-stdlib-polyfill": "Schmavery/bsc-stdlib-polyfill#4.02.3"
   },
-  "devDependencies":{
-    "bs-platform": "bsansouci/bsb-native#2.1.1"
+  "devDependencies": {
+    "bsb-native": "^4.0.7000"
   },
   "homepage": "https://github.com/Schmavery/shim#readme"
 }
