@@ -10,7 +10,7 @@
     "type": "dev"
   }],
   "refmt": 3,
-  "namespace": "Re",
+  "namespace": true,
   "bs-dependencies": ["bsc-stdlib-polyfill"],
   "bsc-flags": [
     "-open BscStdlibPolyfill"
